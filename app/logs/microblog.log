@@ -1,63 +1,65 @@
-2018-10-07 17:39:24,101 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-07 22:12:54,465 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-07 22:13:26,999 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-07 22:59:51,354 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-07 23:00:45,862 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-07 23:06:01,493 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-07 23:09:57,873 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-07 23:21:29,224 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-07 23:43:16,769 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-07 23:44:20,682 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-07 23:46:45,936 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-07 23:49:29,634 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-08 00:02:54,854 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-08 00:25:10,920 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-08 00:38:46,417 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-08 00:40:58,003 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-08 00:41:29,794 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-08 22:07:15,499 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-08 22:08:02,287 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-08 22:10:41,550 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-08 22:28:48,570 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-08 22:54:36,850 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-09 00:16:59,312 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-09 00:35:11,848 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-09 01:22:11,567 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-09 03:20:27,970 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-09 16:36:30,335 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-09 16:38:32,248 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-10 23:30:20,775 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:47]
-2018-10-10 23:58:28,893 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:50]
-2018-10-11 00:29:19,802 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:50]
-2018-10-11 00:32:58,391 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:50]
-2018-10-11 00:40:46,605 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:50]
-2018-10-11 00:45:13,008 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:48]
-2018-10-11 00:45:52,343 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:48]
-2018-10-11 00:51:35,110 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:48]
-2018-10-11 01:05:27,318 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:48]
-2018-10-11 01:11:38,341 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:48]
-2018-10-11 01:11:50,762 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:48]
-2018-10-11 01:24:04,238 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:48]
-2018-10-11 01:24:38,574 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:48]
-2018-10-11 01:25:18,353 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:48]
-2018-10-11 01:26:55,176 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:48]
-2018-10-11 01:27:20,121 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:48]
-2018-10-11 01:27:47,781 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:48]
-2018-10-11 01:38:23,675 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:48]
-2018-10-11 01:39:29,413 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:48]
-2018-10-11 01:44:02,943 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:48]
-2018-10-11 01:56:36,608 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:48]
-2018-10-11 01:56:58,357 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:48]
-2018-10-11 02:04:31,360 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:48]
-2018-10-11 02:09:51,499 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:48]
-2018-10-11 02:38:56,897 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:50]
-2018-10-11 02:47:25,502 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:50]
-2018-10-11 03:03:47,557 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:50]
-2018-10-11 03:04:44,515 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:50]
-2018-10-11 03:06:34,137 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:50]
-2018-10-11 03:12:39,240 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:50]
-2018-10-11 15:30:40,234 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:50]
-2018-10-11 15:50:49,395 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:50]
-2018-10-12 02:10:20,925 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:50]
-2018-10-12 02:20:01,102 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:50]
-2018-10-12 03:00:01,148 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:52]
+2018-10-14 02:21:00,006 ERROR: Exception on /translate [POST] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Mr. Isaac\Documents\macroblog\app\main\routes.py", line 135, in translate_text
+    request.form['dest_language'])})
+  File "C:\Users\Mr. Isaac\Documents\macroblog\app\translate.py", line 7, in translate
+    if 'MS_TRANSLATOR_KEY' not in app.config or \
+NameError: name 'app' is not defined
+2018-10-14 02:38:53,521 ERROR: Exception on /translate [POST] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Mr. Isaac\Documents\macroblog\app\main\routes.py", line 135, in translate_text
+    request.form['dest_language'])})
+  File "C:\Users\Mr. Isaac\Documents\macroblog\app\translate.py", line 7, in translate
+    if 'MS_TRANSLATOR_KEY' not in app.config or \
+NameError: name 'app' is not defined
+2018-10-14 04:22:14,707 ERROR: Exception on /translate [POST] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Mr. Isaac\Documents\macroblog\app\main\routes.py", line 135, in translate_text
+    request.form['dest_language'])})
+  File "C:\Users\Mr. Isaac\Documents\macroblog\app\translate.py", line 7, in translate
+    if 'MS_TRANSLATOR_KEY' not in app.config or \
+NameError: name 'app' is not defined
+2018-10-14 15:38:28,740 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:70]
+2018-10-14 15:40:34,524 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:70]
