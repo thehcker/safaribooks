@@ -74,3 +74,30 @@ elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HT
 2018-10-14 23:53:09,344 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:75]
 2018-10-15 01:59:44,823 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:81]
 2018-10-15 02:10:22,220 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:81]
+2018-10-15 03:27:19,853 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:81]
+2018-10-15 03:29:19,889 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:81]
+2018-10-15 03:32:30,787 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:81]
+2018-10-15 03:55:09,953 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:81]
+2018-10-15 04:19:58,669 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:81]
+2018-10-15 16:44:15,513 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:81]
+2018-10-15 16:45:22,383 ERROR: Exception on /translate [POST] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Mr. Isaac\Documents\macroblog\app\main\routes.py", line 136, in translate_text
+    request.form['dest_language'])})
+  File "C:\Users\Mr. Isaac\Documents\macroblog\app\translate.py", line 7, in translate
+    if 'MS_TRANSLATOR_KEY' not in app.config or \
+NameError: name 'app' is not defined
