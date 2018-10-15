@@ -19,7 +19,7 @@ lib
 lib64
 __pycache__
 anaconda-client==1.6.14
-SQLite3
+.SQLite3
 
 # Installer logs
 pip-log.txt
