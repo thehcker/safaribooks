@@ -101,3 +101,5 @@ Traceback (most recent call last):
   File "C:\Users\Mr. Isaac\Documents\macroblog\app\translate.py", line 7, in translate
     if 'MS_TRANSLATOR_KEY' not in app.config or \
 NameError: name 'app' is not defined
+2018-10-15 17:39:08,106 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:81]
+2018-10-15 17:39:21,497 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\macroblog\app\__init__.py:81]
