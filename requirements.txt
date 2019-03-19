@@ -1,5 +1,4 @@
 alembic==1.0.0
-anaconda-client==1.6.14
 Babel==2.6.0
 blinker==1.4
 certifi==2018.8.24
