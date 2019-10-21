@@ -2,14 +2,21 @@
         <tr>
             <td width="70px">
                 <a href="{{ url_for('main.user', username=post.author.username) }}">
+                    {% if post.author.image.url %}
+                        <td width="256px"><img class="rounded-circle account-img" src="{{ post.author.image }}">
+            </td>
+                    {% else %}
                     <img src="{{ post.author.avatar(70) }}" />
+                    {% endif %}
                 </a>
             </td>
             <td>
                 {% set user_link %}
-                    <a href="{{ url_for('main.user', username=post.author.username) }}">
-                        {{ post.author.username }}
-                    </a>
+                    <span class="user_popup">
+                        <a href="{{ url_for('main.user', username=post.author.username) }}">
+                            {{ post.author.username }}
+                        </a>
+                    </span>
                 {% endset %}
                 {{ _('%(username)s said %(when)s',
                     username=user_link, when=moment(post.timestamp).fromNow()) }}

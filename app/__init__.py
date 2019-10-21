@@ -1,7 +1,8 @@
 from flask import Flask,request,current_app
 from config import Config
 from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
+from flask_script import Manager
+from flask_migrate import Migrate, MigrateCommand
 from flask_login import LoginManager
 import logging
 from logging.handlers import SMTPHandler,RotatingFileHandler
@@ -12,8 +13,12 @@ from flask_moment import Moment
 from flask_babel import Babel,lazy_gettext as _l
 from elasticsearch import Elasticsearch
 
+MIGRATION_DIR = os.path.join('app', 'migrations')
+
 db = SQLAlchemy()
 migrate = Migrate()
+
+# manager.add_command('db', MigrateCommand)
 login = LoginManager()
 login.login_view = 'auth.login'
 login.login_message = _l('Please log in to access this page.')
@@ -26,8 +31,9 @@ def create_app(config_class=Config):
     app.config.from_object(config_class)
 
     db.init_app(app)
-    migrate.init_app(app, db)
+    migrate.init_app(app, db, directory=MIGRATION_DIR)
     login.init_app(app)
+    Manager(app).add_command('db', MigrateCommand)
     mail.init_app(app)
     bootstrap.init_app(app)
     moment.init_app(app)
@@ -90,5 +96,4 @@ def get_locale():
 from app import models
 
 if __name__ == "__main__":
-	app.run()
-
+	migrate.run()
