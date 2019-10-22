@@ -1,4 +1,4 @@
-2019-08-11 00:40:45,773 ERROR: Exception on / [GET] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
+2019-08-16 16:43:30,992 ERROR: Exception on /edit_profile [POST] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
 Traceback (most recent call last):
   File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -14,24 +14,16 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 51, in index
-    prev_url=prev_url)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\templating.py", line 134, in render_template
-    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
-    return self.get_template(template_name_or_list, parent, globals)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\environment.py", line 830, in get_template
-    return self._load_template(name, self.make_globals(globals))
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\environment.py", line 804, in _load_template
-    template = self.loader.load(self, name, globals)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\loaders.py", line 113, in load
-    source, filename, uptodate = self.get_source(environment, name)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\templating.py", line 58, in get_source
-    return self._get_source_fast(environment, template)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
-    raise TemplateNotFound(template)
-jinja2.exceptions.TemplateNotFound: index.html
-2019-08-11 00:40:46,029 ERROR: Exception on / [GET] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 106, in edit_profile
+    picture_file = save_picture(form.picture.data)
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 74, in save_picture
+    form_picture.save(picture_path)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\werkzeug\datastructures.py", line 2725, in save
+    dst = open(dst, 'wb')
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Mr. Isaac\\Documents\\Flask Projects\\macroblog\\app\\main\\static/profile_pics\\92e23b6f262e257c.jpg'
+2019-08-16 16:44:39,219 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-08-16 17:04:09,299 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-08-16 17:05:19,663 ERROR: Exception on /edit_profile [POST] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
 Traceback (most recent call last):
   File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -47,26 +39,13 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 51, in index
-    prev_url=prev_url)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\templating.py", line 134, in render_template
-    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
-    return self.get_template(template_name_or_list, parent, globals)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\environment.py", line 830, in get_template
-    return self._load_template(name, self.make_globals(globals))
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\environment.py", line 804, in _load_template
-    template = self.loader.load(self, name, globals)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\loaders.py", line 113, in load
-    source, filename, uptodate = self.get_source(environment, name)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\templating.py", line 58, in get_source
-    return self._get_source_fast(environment, template)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
-    raise TemplateNotFound(template)
-jinja2.exceptions.TemplateNotFound: index.html
-2019-08-11 00:40:58,255 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-11 00:41:28,374 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-11 00:41:35,090 ERROR: Exception on / [GET] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 105, in edit_profile
+    picture_file = save_picture(form.picture.data)
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 72, in save_picture
+    picture_path = os.path.join(app.root_path, 'static/profile_pics', picture_fn)
+AttributeError: module 'app.app' has no attribute 'root_path'
+2019-08-16 17:08:14,922 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-08-16 17:08:51,275 ERROR: Exception on /edit_profile [POST] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
 Traceback (most recent call last):
   File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -82,20 +61,52 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 51, in index
-    prev_url=prev_url)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\templating.py", line 134, in render_template
-    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
-    return self.get_template(template_name_or_list, parent, globals)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\environment.py", line 830, in get_template
-    return self._load_template(name, self.make_globals(globals))
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\environment.py", line 804, in _load_template
-    template = self.loader.load(self, name, globals)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\loaders.py", line 113, in load
-    source, filename, uptodate = self.get_source(environment, name)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\templating.py", line 58, in get_source
-    return self._get_source_fast(environment, template)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
-    raise TemplateNotFound(template)
-jinja2.exceptions.TemplateNotFound: index.html
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 105, in edit_profile
+    picture_file = save_picture(form.picture.data)
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 72, in save_picture
+    picture_path = os.path.join(create_app.root_path, 'static/profile_pics', picture_fn)
+AttributeError: 'function' object has no attribute 'root_path'
+2019-08-16 17:13:25,756 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-08-16 17:13:31,362 ERROR: Exception on /edit_profile [POST] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 105, in edit_profile
+    picture_file = save_picture(form.picture.data)
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 72, in save_picture
+    picture_path = os.path.join(app.root_path, 'static/profile_pics', picture_fn)
+AttributeError: module 'app.app' has no attribute 'root_path'
+2019-08-16 19:03:29,862 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-08-16 19:04:43,144 ERROR: Exception on /edit_profile [POST] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 105, in edit_profile
+    picture_file = save_picture(form.picture.data)
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 72, in save_picture
+    picture_path = os.path.join(app.root_path, 'static/profile_pics', picture_fn)
+AttributeError: module 'app.app' has no attribute 'root_path'

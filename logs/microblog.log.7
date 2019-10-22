@@ -1,4 +1,4 @@
-2019-08-14 16:23:15,876 ERROR: Exception on /user/thecoder [GET] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
+2019-08-23 18:41:59,465 ERROR: Exception on /edit_profile [POST] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
 Traceback (most recent call last):
   File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -14,20 +14,16 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 84, in user
-    image = url_for('./static', filename='profile_pics/' + current_user.image)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\helpers.py", line 356, in url_for
-    return appctx.app.handle_url_build_error(error, endpoint, values)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 2061, in handle_url_build_error
-    reraise(exc_type, exc_value, tb)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\_compat.py", line 35, in reraise
-    raise value
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\helpers.py", line 345, in url_for
-    force_external=external)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\werkzeug\routing.py", line 1776, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.BuildError: Could not build url for endpoint 'main./static' with values ['filename']. Did you mean 'main.search' instead?
-2019-08-14 16:23:44,037 ERROR: Exception on /user/thecoder [GET] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 107, in edit_profile
+    picture_file = save_picture(form.picture.data)
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 75, in save_picture
+    form_picture.save(picture_path)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\werkzeug\datastructures.py", line 2725, in save
+    dst = open(dst, 'wb')
+FileNotFoundError: [Errno 2] No such file or directory: 'C:/static/profile_pics\\a826e8aede274928.jpg'
+2019-08-23 18:42:57,101 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-08-23 18:51:01,856 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-08-23 18:51:19,678 ERROR: Exception on /edit_profile [POST] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
 Traceback (most recent call last):
   File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -43,35 +39,19 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 84, in user
-    image = url_for('static', filename='profile_pics/' + current_user.image)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\helpers.py", line 356, in url_for
-    return appctx.app.handle_url_build_error(error, endpoint, values)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 2061, in handle_url_build_error
-    reraise(exc_type, exc_value, tb)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\_compat.py", line 35, in reraise
-    raise value
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\helpers.py", line 345, in url_for
-    force_external=external)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\werkzeug\routing.py", line 1776, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.BuildError: Could not build url for endpoint 'main./static' with values ['filename']. Did you mean 'main.search' instead?
-2019-08-14 16:23:53,589 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 16:25:48,073 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 16:38:22,948 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 16:39:38,833 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 16:42:40,817 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 16:43:41,228 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 16:44:20,907 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 16:49:42,019 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 16:52:32,797 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 16:53:23,254 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 16:55:16,530 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 16:57:06,462 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 17:22:22,500 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 17:28:07,754 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 17:40:33,438 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 17:40:35,782 ERROR: Exception on /user/thecoder [GET] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 112, in edit_profile
+    picture_file = save_picture(form.picture.data)
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 78, in save_picture
+    i = Image.open(form_picture)
+NameError: name 'Image' is not defined
+2019-08-23 18:58:16,413 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-08-23 19:10:28,737 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-08-23 19:12:09,560 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-08-23 19:13:58,677 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-08-23 19:15:05,644 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-08-23 19:16:24,965 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-08-23 19:32:14,019 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-08-23 19:32:55,000 ERROR: Exception on /_post [GET] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
 Traceback (most recent call last):
   File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -85,28 +65,25 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1799, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 81, in user
-    prof = User.objects.all()
-AttributeError: type object 'User' has no attribute 'objects'
-2019-08-14 17:40:45,847 ERROR: Exception on /user/thecoder [GET] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
-Traceback (most recent call last):
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 161, in _post
+    return render_template('_post.html', image_file=image_file)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
     reraise(exc_type, exc_value, tb)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\_compat.py", line 35, in reraise
-    raise value
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 81, in user
-    prof = User.objects.all()
-AttributeError: type object 'User' has no attribute 'objects'
-2019-08-14 17:43:02,693 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\templates\_post.html", line 4, in top-level template code
+    <a href="{{ url_for('main.user', username=post.author.username) }}">
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'post' is undefined
+2019-08-23 19:36:13,776 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-08-23 19:37:05,350 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-08-23 19:38:09,868 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]

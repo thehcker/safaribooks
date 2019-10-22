@@ -1,4 +1,4 @@
-2019-08-14 17:43:13,051 ERROR: Exception on /user/thecoder [GET] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
+2019-08-23 19:38:13,553 ERROR: Exception on /explore [GET] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
 Traceback (most recent call last):
   File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -14,27 +14,43 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 81, in user
-    prof = User.objects.all()
-AttributeError: type object 'User' has no attribute 'objects'
-2019-08-14 17:43:54,175 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 17:46:22,543 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 17:47:50,575 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 17:48:43,410 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 17:50:21,201 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 17:59:07,289 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 18:05:44,971 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 18:11:10,085 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 18:11:52,529 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 18:13:57,178 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 18:19:21,385 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 18:20:29,166 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 18:21:24,398 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 18:25:07,323 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 18:29:54,439 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 18:30:22,324 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 18:34:51,862 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 18:34:54,503 ERROR: Exception on /user/thecoder [GET] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 68, in explore
+    prev_url=prev_url)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\templates\base.html", line 67, in block "content"
+    {% block app_content %}{% endblock %}
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\templates\index.html", line 11, in block "app_content"
+    {% include '_post.html' %}
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\templates\_post.html", line 5, in top-level template code
+    {% if user.image_file %}
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'user' is undefined
+2019-08-23 19:39:15,749 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-08-23 19:39:23,871 ERROR: Exception on /explore [GET] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
 Traceback (most recent call last):
   File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -50,50 +66,39 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 84, in user
-    image_file = url_for(basedir, 'static', filename='profile_pics/' + current_user.image)
-TypeError: url_for() takes 1 positional argument but 2 were given
-2019-08-14 18:35:58,434 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 18:37:55,867 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 18:44:27,599 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 18:48:24,179 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 18:48:50,096 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 18:54:55,575 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 18:57:15,061 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 18:57:17,763 ERROR: Exception on /user/thecoder [GET] [in c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py:1761]
-Traceback (most recent call last):
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 68, in explore
+    prev_url=prev_url)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
     reraise(exc_type, exc_value, tb)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\_compat.py", line 35, in reraise
-    raise value
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\main\routes.py", line 84, in user
-    image_file = url_for('static/', filename='profile_pics/' + current_user.image)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\helpers.py", line 356, in url_for
-    return appctx.app.handle_url_build_error(error, endpoint, values)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\app.py", line 2061, in handle_url_build_error
-    reraise(exc_type, exc_value, tb)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\_compat.py", line 35, in reraise
-    raise value
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask\helpers.py", line 345, in url_for
-    force_external=external)
-  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\werkzeug\routing.py", line 1776, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.BuildError: Could not build url for endpoint 'static/' with values ['filename']. Did you mean 'static' instead?
-2019-08-14 18:57:46,218 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 19:00:27,168 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 19:01:11,016 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 19:01:47,172 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 19:03:49,305 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-14 19:08:45,131 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-16 16:15:53,374 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
-2019-08-16 16:41:28,286 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\templates\base.html", line 67, in block "content"
+    {% block app_content %}{% endblock %}
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\templates\index.html", line 11, in block "app_content"
+    {% include '_post.html' %}
+  File "C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\templates\_post.html", line 5, in top-level template code
+    {% if username.image_file %}
+  File "c:\users\mr. isaac\documents\macroblog\swahilipot\lib\site-packages\jinja2\environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'username' is undefined
+2019-08-23 19:40:17,150 INFO: Microblog startup [in C:\Users\Mr. Isaac\Documents\Flask Projects\macroblog\app\__init__.py:87]
