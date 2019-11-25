@@ -84,3 +84,4 @@ jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'else'.
 2019-10-22 13:57:56,231 INFO: Microblog startup [in C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\__init__.py:87]
 2019-10-22 14:47:02,767 INFO: Microblog startup [in C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\__init__.py:87]
 2019-10-22 19:42:38,588 INFO: Microblog startup [in C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-11-25 16:56:28,497 INFO: Microblog startup [in C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\__init__.py:87]
