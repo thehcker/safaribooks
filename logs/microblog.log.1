@@ -1,4 +1,4 @@
-2019-11-25 17:20:04,094 ERROR: Exception on /index [GET] [in c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\app.py:1761]
+2019-11-25 17:20:07,580 ERROR: Exception on /user/Thecoder [GET] [in c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\app.py:1761]
 Traceback (most recent call last):
   File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -14,58 +14,7 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\main\routes.py", line 53, in index
-    prev_url=prev_url)
-  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\templating.py", line 135, in render_template
-    context, ctx.app)
-  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\templating.py", line 117, in _render
-    rv = template.render(context)
-  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
-    return original_render(self, *args, **kwargs)
-  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\jinja2\environment.py", line 1008, in render
-    return self.environment.handle_exception(exc_info, True)
-  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\jinja2\_compat.py", line 37, in reraise
-    raise value.with_traceback(tb)
-  File "C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\templates\index.html", line 2, in top-level template code
-    {% import 'bootstrap/wtf.html' as wtf %}
-  File "C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\templates\base.html", line 1, in top-level template code
-    {% extends 'bootstrap/base.html' %}
-  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
-    {% block doc -%}
-  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
-    {%- block html %}
-  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
-    {% block body -%}
-  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
-    {% block content -%}
-  File "C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\templates\base.html", line 67, in block "content"
-    {% block app_content %}{% endblock %}
-  File "C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\templates\index.html", line 11, in block "app_content"
-    {% include '_post.html' %}
-  File "C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\templates\_post.html", line 5, in top-level template code
-    {% if posts.author.image.url %}
-  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\jinja2\environment.py", line 430, in getattr
-    return getattr(obj, attribute)
-jinja2.exceptions.UndefinedError: 'list object' has no attribute 'author'
-2019-11-25 17:20:06,083 ERROR: Exception on /messages [GET] [in c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\app.py:1761]
-Traceback (most recent call last):
-  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
-    raise value
-  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\main\routes.py", line 213, in messages
+  File "C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\main\routes.py", line 98, in user
     next_url=next_url, prev_url=prev_url)
   File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\templating.py", line 135, in render_template
     context, ctx.app)
@@ -79,7 +28,7 @@ Traceback (most recent call last):
     reraise(exc_type, exc_value, tb)
   File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\jinja2\_compat.py", line 37, in reraise
     raise value.with_traceback(tb)
-  File "C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\templates\messages.html", line 1, in top-level template code
+  File "C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\templates\user.html", line 1, in top-level template code
     {% extends "base.html" %}
   File "C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\templates\base.html", line 1, in top-level template code
     {% extends 'bootstrap/base.html' %}
@@ -93,10 +42,73 @@ Traceback (most recent call last):
     {% block content -%}
   File "C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\templates\base.html", line 67, in block "content"
     {% block app_content %}{% endblock %}
-  File "C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\templates\messages.html", line 6, in block "app_content"
+  File "C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\templates\user.html", line 38, in block "app_content"
     {% include '_post.html' %}
   File "C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\templates\_post.html", line 5, in top-level template code
     {% if posts.author.image.url %}
   File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\jinja2\environment.py", line 430, in getattr
     return getattr(obj, attribute)
-jinja2.exceptions.UndefinedError: 'posts' is undefined
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'author'
+2019-11-25 17:20:31,696 ERROR: Exception on /user/Thecoder [GET] [in c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\main\routes.py", line 98, in user
+    next_url=next_url, prev_url=prev_url)
+  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\templates\base.html", line 67, in block "content"
+    {% block app_content %}{% endblock %}
+  File "C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\templates\user.html", line 38, in block "app_content"
+    {% include '_post.html' %}
+  File "C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\templates\_post.html", line 5, in top-level template code
+    {% if post.author.image.url %}
+  File "c:\users\mr.isaac\appdata\local\programs\python\python36\lib\site-packages\jinja2\environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'list object' has no attribute 'author'
+2019-11-25 17:20:39,733 INFO: Microblog startup [in C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-11-25 17:27:15,340 INFO: Microblog startup [in C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-11-25 17:27:51,686 INFO: Microblog startup [in C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-11-25 17:28:35,588 INFO: Microblog startup [in C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-11-25 17:31:56,740 INFO: Microblog startup [in C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-11-25 17:33:18,150 INFO: Microblog startup [in C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-11-25 17:34:02,543 INFO: Microblog startup [in C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-11-25 17:34:39,332 INFO: Microblog startup [in C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2019-11-25 17:36:29,389 INFO: Microblog startup [in C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2020-04-09 15:30:16,707 INFO: Microblog startup [in C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2020-05-28 04:41:56,335 INFO: Microblog startup [in C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2020-05-28 04:57:45,212 INFO: Microblog startup [in C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\__init__.py:87]
