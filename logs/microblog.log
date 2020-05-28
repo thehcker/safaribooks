@@ -111,3 +111,4 @@ jinja2.exceptions.UndefinedError: 'list object' has no attribute 'author'
 2019-11-25 17:36:29,389 INFO: Microblog startup [in C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\__init__.py:87]
 2020-04-09 15:30:16,707 INFO: Microblog startup [in C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\__init__.py:87]
 2020-05-28 04:41:56,335 INFO: Microblog startup [in C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\__init__.py:87]
+2020-05-28 04:57:45,212 INFO: Microblog startup [in C:\Users\Mr.ISAAC\Documents\Flask Projects\macroblog\app\__init__.py:87]
