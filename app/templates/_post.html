@@ -3,7 +3,7 @@
             <td width="70px">
                 <a href="{{ url_for('main.user', username=post.author.username) }}">
                     {% if post.author.image.url %}
-                        <td width="256px"><img class="rounded-circle account-img" src="{{ post.author.image }}">
+                        <td width="256px"><img class="rounded-circle account-img" src="{{ post.author.image.url }}">
             </td>
                     {% else %}
                     <img src="{{ post.author.avatar(70) }}" />
